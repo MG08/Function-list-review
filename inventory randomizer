@@ -1,0 +1,22 @@
+import random
+items = []
+
+def itemDropper ():
+    num = random.randrange(1, 100)
+    if num < 25:
+        items.append("potion")
+        print("You got a potion!")
+    elif num < 50:
+        items.append("sock")
+        print("You got a sock!")
+    elif num < 60:
+        items.append("coin")
+        print("You got a coin!")
+    else:
+        print("no items dropped")
+        
+    print("Your inventory:", items)
+    
+while(1):
+    itemDropper()
+    input()
